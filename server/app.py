@@ -12,7 +12,7 @@ load_dotenv()
 API_ENDPOINT = 'https://discord.com/api/v8'
 CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
-REDIRECT_URI = 'http://localhost:3000/login'
+REDIRECT_URI = '' # redirect uri for your website
 
 app = Flask(__name__)
 app.config.from_object(ApplicationConfig)
