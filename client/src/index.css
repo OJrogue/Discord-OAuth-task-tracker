@@ -24,8 +24,9 @@ code {
 }
 
 .add_task {
+  box-sizing: border-box;
   width: 100%;
-  max-width: 500px;
+  max-width: 554px;
   margin: 0.3rem;
   padding: 1rem 1.5rem;
   text-align: left;
@@ -72,8 +73,10 @@ code {
 }
 
 .task {
+  overflow-wrap: break-word; 
+  box-sizing: border-box;
   width: 100%;
-  max-width: 500px;
+  max-width: 554px;
   margin: 0.3rem;
   padding: 1.5rem;
   text-align: left;
@@ -273,6 +276,8 @@ a {
 }
 
 .close {
+  width: 25px;
+  aspect-ratio: 1 / 1;
   display: inline-block;
   background: rgba(67, 69, 72, 1);
   border: 1px solid black;
@@ -298,4 +303,33 @@ a {
 
 .close:active {
   transform: scale(0.98);
+}
+
+@media screen and (min-width: 2400px) {
+  body{
+    font-size:  30px;
+  }
+  .add_task {
+    max-width: 800px;
+  }
+  .task {
+    max-width: 800px;
+  }
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+  .header_div{
+    max-width: 1500px;
+  }
+  .header {
+    height: 100px;
+  }
+  .add_task input{
+    font-size:  20px;
+  }
+
+  .add_task button{
+    font-size:  20px;
+  }
 }
