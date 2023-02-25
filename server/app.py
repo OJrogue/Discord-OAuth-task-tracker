@@ -9,7 +9,7 @@ import os
 
 load_dotenv()
 
-API_ENDPOINT = 'https://discord.com/api/v8'
+API_ENDPOINT = 'https://discord.com/api'
 CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
 REDIRECT_URI = '' # redirect uri for your website
